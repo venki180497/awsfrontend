@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 function App() {
   const [data, setData] = useState('');
   const apihandler = async () => {  
-    const response = await fetch('http://localhost:4000/');
+    const response = await fetch('http://13.202.155.38:4000/');
     const data = await response.text();
     console.log(data,"data");
     setData(data);
